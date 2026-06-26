@@ -1,5 +1,5 @@
 import brainwave from '../assets/brainwave.svg'
-import {navigation} from '../constanse'
+import {navigation} from '../constants'
 import { GiHamburgerMenu } from "react-icons/gi";
 import {useLocation} from 'react-router-dom'
 import Button from "./Button";
