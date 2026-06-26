@@ -167,6 +167,17 @@ body {
   @utility h3 {
     @apply text-[2rem] leading-normal md:text-[2.5rem];
   }
+  @utility h4 {
+  @apply text-[2rem] leading-normal;
+}
+
+@utility h5 {
+  @apply text-2xl leading-normal;
+}
+
+@utility h6 {
+  @apply font-semibold text-lg leading-8;
+}
 
   @utility body-1 {
     @apply text-[0.875rem] leading-[1.5rem]
