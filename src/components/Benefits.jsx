@@ -24,7 +24,7 @@
                     key={item.id}
                     >
                 <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                    <h5 className="h5 mb-5">{item.title}</h5>
+                    <h5 className="h5 mb-5 text-4xl md:text-5xl">{item.title}</h5>
                     <p className="body-2 mb-6 text-n-3">{item.text}</p>
                     <div className="flex items-center mt-auto">
                     <img

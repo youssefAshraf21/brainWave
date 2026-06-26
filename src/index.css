@@ -174,8 +174,16 @@ body {
           lg:text-[1.25rem] lg:leading-8;
   }
 
+  @utility body-2 {
+  @apply font-light text-[0.875rem] leading-6 md:text-base;
+  }
+
   @utility button {
     @apply font-code text-xs font-bold uppercase tracking-wider;
+  }
+
+  @utility tagline {
+    @apply font-grotesk text-xs font-light uppercase tracking-tagline;
   }
 
   @utility tap-highlight-color {
