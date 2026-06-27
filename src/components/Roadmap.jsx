@@ -11,13 +11,13 @@ const Roadmap = () => (
                 <div className="container md:pb-10">
                 <Heading tag="Ready to get started" title="What we’re working on" />
 
-                <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-[7rem]">
+                <div className="relative grid gap-6 md:grid-cols-2 md:gap-4 md:pb-28">
                     {roadmap.map((item) => {
                     const status = item.status === "done" ? "Done" : "In progress";
 
                     return (
                         <div
-                        className={`md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem] ${
+                        className={`md:flex even:md:translate-y-28 p-0.25 rounded-[2.5rem] ${
                             item.colorful ? "bg-conic-gradient" : "bg-n-6"
                         }`}
                         key={item.id}
@@ -33,7 +33,7 @@ const Roadmap = () => (
                             />
                             </div>
                             <div className="relative z-1">
-                            <div className="flex items-center justify-between max-w-[27rem] mb-8 md:mb-20">
+                            <div className="flex items-center justify-between max-w-108 mb-8 md:mb-20">
                                 <Tagline>{item.date}</Tagline>
 
                                 <div className="flex items-center px-4 py-1 bg-n-1 rounded text-n-8">

@@ -7,12 +7,12 @@ const PricingList = () => {
         <div className="flex gap-4 max-lg:flex-wrap">
         {pricing.map((item) => (
             <div key={item.id}
-            className={`w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8  odd:my-4 ${item.id === 0 ? "text-color-2" : ""}`}>
+            className={`w-76 max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8  odd:my-4 ${item.id === 0 ? "text-color-2" : ""}`}>
                 <h4 className={`h4 mb-4 ${item.titleColor}`}>
                     {item.title}
                 </h4>
-                <p className="body-2 mb-3 text-n-1/50 min-h-[4rem]">{item.description}</p>
-                <div className="flex items-center h-[5.5rem] mb-6">
+                <p className="body-2 mb-3 text-n-1/50 min-h-16">{item.description}</p>
+                <div className="flex items-center h-22 mb-6">
                     {item.price &&(
                         <>
                             <div className="h3">$</div>
