@@ -1,4 +1,4 @@
-const brackets = (position) =>
+const brackets = (position, id) =>
   position === "left" ? (
     <svg
       width="5"
@@ -7,9 +7,9 @@ const brackets = (position) =>
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M5 0.822266H1V12.8223H5" stroke="url(#brackets-left)" />
+      <path d="M5 0.822266H1V12.8223H5" stroke={`url(#brackets-left-${id})`} />
       <defs>
-        <linearGradient id="brackets-left" x1="50%" x2="50%" y1="0%" y2="100%">
+        <linearGradient id={`brackets-left-${id}`} x1="50%" x2="50%" y1="0%" y2="100%">
           <stop offset="0%" stopColor="#89F9E8" />
           <stop offset="100%" stopColor="#FACB7B" />
         </linearGradient>
@@ -25,11 +25,11 @@ const brackets = (position) =>
     >
       <path
         d="M-2.98023e-08 0.822266H4V12.8223H-2.98023e-08"
-        stroke="url(#brackets-right)"
+        stroke={`url(#brackets-right-${id})`}
       />
       <defs>
         <linearGradient
-          id="brackets-right"
+          id={`brackets-right-${id}`}
           x1="14.635%"
           x2="14.635%"
           y1="0%"
