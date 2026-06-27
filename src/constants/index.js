@@ -216,6 +216,7 @@
         "Personalized recommendations based on your preferences",
         "Ability to explore the app and its features without any cost",
         ],
+        titleColor: "text-color-2",
     },
     {
         id: "1",
@@ -227,6 +228,7 @@
         "An analytics dashboard to track your conversations",
         "Priority support to solve issues quickly",
         ],
+        titleColor: "text-color-1",
     },
     {
         id: "2",
@@ -238,6 +240,7 @@
         "Personalized recommendations based on your preferences",
         "Ability to explore the app and its features without any cost",
         ],
+        titleColor: "text-color-3",
     },
     ];
 
